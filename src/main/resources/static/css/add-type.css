@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Tilt Neon', cursive;
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+    background-color: #fc8836;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar-nav .nav-item {
+    padding: 5px;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+header .navbar-nav .nav-item::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+header .navbar-nav .nav-item:hover::after {
+    color: #fff;
+    width: 100%;
+}
+
+header .navbar-nav .nav-item:hover .nav-link {
+    color: #fff;
+}
+
+header .navbar-brand {
+    font-size: 2rem;
+    color: #444;
+}
+
+header .navbar-brand span {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    margin: 0 50px 0 0;
+}
+
+.form-search .form-search-input {
+    outline: none;
+    border: none;
+    width: 225px;
+    height: 40px;
+    padding: 10px;
+}
+
+.form-search .button-search {
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+}
+
+/* form nhâp  */
+
+.form-add-type form {
+    width: 80%;
+    /* border: 1px solid #444; */
+    margin-top: 50px;
+    border: 1px solid #444;
+}
+
+.form-add-type form fieldset {
+    margin-top: 30px;
+    position: relative;
+}
+
+.form-add-type form fieldset legend {
+    padding: 10px;
+    background-color: #fff;
+    display: block;
+    width: 165px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: -55px;
+}
+
+.form-add-type .btn_summit {
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: #fc8836;
+    outline: none;
+    position: absolute;
+    bottom: -1%;
+    right: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.form-add-type .title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-add-type .title h5 {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+.form-add-type .form-input {
+    /* padding: 0 30px 0 50px; */
+    /* background-color: #fc8836; */
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+.form-add-type .form-input .form-input_name h5 {
+    margin: 0 20px 5px 1px;
+    color: #333;
+    font-size: 1.02rem;
+}
+
+.form-add-type .form-input .form-input_name input {
+    outline: none;
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #444;
+    padding: 3px;
+}
+
+/* danh sách  */
+
+.img-fluid {
+    cursor: pointer;
+}
+
+.list-of-type {
+    margin: 40px auto;
+    width: 80%;
+    /* background-color: #fc8836; */
+}
+
+.list-of-type .row-of-type .list-type-item {
+    margin: 5px;
+}
+
+.list-of-type .row-of-type img {
+    border-radius: 10px;
+}
+
+.list-of-type .row-of-type .list-type-item .type-detail {
+    margin-top: 10px;
+}
+
+.list-of-type h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: 700;
+    color: #333;
+}

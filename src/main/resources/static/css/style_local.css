@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Tilt Neon', cursive;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+
+/* HEADER  */
+
+header {
+    background-color: rgba(248, 189, 91, 255);
+    height: 120px;
+}
+
+.header__content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content .header__left {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.header__content .header__left .logo {
+    margin: 0 30px;
+}
+
+.header__content .header__left .logo h1 span {
+    font-family: 'Tilt Neon', cursive;
+    color: #fff;
+    font-size: 2.76rem;
+}
+
+.header__content .header__left input {
+    width: 275px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+}
+
+.header__content .header__left input::placeholder {
+    padding: 10px;
+}
+
+.header__content .header__left a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.header__content .header__right ul {
+    list-style: none;
+}
+
+.header__content .header__right ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header__content .header__right ul li a {
+    font-family: 'Tilt Neon', cursive;
+    text-decoration: none;
+    padding: 7.5px;
+    color: #000000;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.header__content .header__right ul li a:hover {
+    opacity: 1;
+}
+
+.header__content .header__right ul li a svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+/* dropdown-menu  */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* CAROUSEL  */
+
+.carousel .owl-theme {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.carousel .item img {
+    height: 270px;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    background-color: rgba(248, 189, 91, 255);
+}
+
+
+/* CONTENT  */
+
+.comics .header__tittle {
+    width: 80%;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.comics .header__tittle h1 {
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+
+.comic__content {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.comic__content .comic__content-item img {
+    height: 500px;
+    width: 350px;
+    margin: 0 0 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(248, 189, 91, 255);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.comic__content .comic__content-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 0px;
+}
+
+.comic__content .comic__content-item h1 {
+    font-size: 1.4rem;
+}
+
+.comic__content .comic__content-item a {
+    text-decoration: none;
+}
+
+.comic__content .comic__content-item .content-item__tille {
+    background-color: rgba(248, 188, 91, 255);
+    width: 350px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+.footer__content {
+    margin: 100px 0 0;
+    height: 250px;
+    background-color: rgba(248, 189, 91, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__content .logo {
+    position: relative;
+}
+
+.footer__content .logo h1 {
+    font-size: 3rem;
+}
+
+.footer__content .logo h1 span {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.footer__content .logo input {
+    width: 500px;
+    height: 70px;
+    border-radius: 70px;
+    border: none;
+}
+
+.footer__content .logo input::placeholder {
+    padding: 5px;
+}
+
+.footer__content .logo button {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 100px;
+    height: 65px;
+    border-radius: 70px;
+    border: none;
+}
+
+.footer__content .logo button:hover {
+    transform: scale(1.2);
+}
+
+.footer__content .social svg {
+    width: 50px;
+    height: 50px;
+    color: #333;
+}
+
+.footer__content .social a {
+    text-decoration: none;
+    margin: 10px;
+}
